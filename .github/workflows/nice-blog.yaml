@@ -1,0 +1,10 @@
+name: Blog
+on: [push]
+jobs:
+  generate:
+    steps:
+      - uses: actions/checkout@v2
+      - uses: max/nice-blog@master
+  # publish:
+    # steps:
+      # - uses: max/vercel@master
